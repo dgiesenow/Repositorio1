@@ -3,12 +3,49 @@
   <head>
     <meta charset="utf-8">
     <title>TFC</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--Letra google Montserrat-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   </head>
   <body>
     <script type="text/javascript" scr="doc.js">
     </script>
-    <div class="peliculas" id="peliculas">
-      
+    <nav class="navbargeneral">
+      <h2 class="h2nav"> TFS </h2>
+      <ul class="ulnav">
+        <li><a href="index.html">Home</a></li>
+        <li>Series</li>
+        <li>Genders</li>
+      </ul>
+      <!--pense que aca podemos adjuntas la pagina de login*/
+      <button class="loginbtn"-->
+    <button class="loginbutton">Log in</button>
+    </nav>
+    <div class="banner">
     </div>
+    <div class="search">
+    <!--este es el div para la barra de navegacion, la podemos mover arriba dsps si te copa mas. ver de cambiar nombres asi queda mas claro también-->
+     <form class="formsearch">
+      <input class="input" type="search" placeholder="Search" aria-label="Search">
+      <!--estaria bueno averiguar como hacer para que se haga submit con el boton enter del teclado, lo podemos preguntar la clase que viene-->
+         <button class="searchbtn" type="submit"> Search </button>
+     </form>
+    </div>
+
+
+    <div class="peliculas" id="peliculas">
+      <!--aca es donde queremos incertar el carrusel de peliculas despues con el api-->
+      <h3>Aca van las peliculas con el api</h3>
+    </div>
+
+    <footer>
+      <ul class="details">
+      </ul>
+      <ul class="contacto">
+      </ul>
+      <ul class="politicasydetalles">
+
+      </ul>
+    </footer>
   </body>
 </html>
