@@ -5,13 +5,19 @@
     <link rel="stylesheet" href="css/style.css">
     <!--Letra google Montserrat-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- UIkit CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
+
+     <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
   </head>
   <body>
-    <script type="text/javascript" scr="doc.js">
-    </script>
-     HEAD
+
+
+
     <div class="peliculas" id="peliculas">
-=======
+
     <nav class="navbargeneral">
       <h2 class="h2nav"> TFS </h2>
       <ul class="ulnav">
@@ -54,30 +60,57 @@
      	</form>
      	<script src="js/buscador.js"></script>
     </div>
->>>>>>> master
+    <h2>Populares</h2>
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-5@m uk-grid populares">
+
+        <!-- <li>
+            <div class="uk-panel">
+                <img src="images/slidfsdfdsfder1.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>1</h1></div>
+            </div>
+        </li> -->
 
 
-    <div class="cartelera" id="poster">
-      <!--aca es donde queremos incertar el carrusel de peliculas despues con el api-->
+    </ul>
 
-       <div class="img-caja">
-			<a href="detalle-peliculas.html">
-				<img src="https://image.tmdb.org/t/p/w500/kqjL17yufvn9OVLyXYpvtyrFfak.jpg" alt="una pelicula">
-        <img src="https://image.tmdb.org/t/p/w500/kqjL17yufvn9OVLyXYpvtyrFfak.jpg" alt="una pelicula">
-        <img src="https://image.tmdb.org/t/p/w500/kqjL17yufvn9OVLyXYpvtyrFfak.jpg" alt="una pelicula">
-        <img src="https://image.tmdb.org/t/p/w500/kqjL17yufvn9OVLyXYpvtyrFfak.jpg" alt="una pelicula">
-        <img src="https://image.tmdb.org/t/p/w500/kqjL17yufvn9OVLyXYpvtyrFfak.jpg" alt="una pelicula">
-        <img src="https://image.tmdb.org/t/p/w500/kqjL17yufvn9OVLyXYpvtyrFfak.jpg" alt="una pelicula">
-        <img src="https://image.tmdb.org/t/p/w500/kqjL17yufvn9OVLyXYpvtyrFfak.jpg" alt="una pelicula">
-        <img src="https://image.tmdb.org/t/p/w500/kqjL17yufvn9OVLyXYpvtyrFfak.jpg" alt="una pelicula">
-        <img src="https://image.tmdb.org/t/p/w500/kqjL17yufvn9OVLyXYpvtyrFfak.jpg" alt="una pelicula">
-        <img src="https://image.tmdb.org/t/p/w500/kqjL17yufvn9OVLyXYpvtyrFfak.jpg" alt="una pelicula">
-        <img src="https://image.tmdb.org/t/p/w500/kqjL17yufvn9OVLyXYpvtyrFfak.jpg" alt="una pelicula">
-        <img src="https://image.tmdb.org/t/p/w500/kqjL17yufvn9OVLyXYpvtyrFfak.jpg" alt="una pelicula">
-        <img src="https://image.tmdb.org/t/p/w500/kqjL17yufvn9OVLyXYpvtyrFfak.jpg" alt="una pelicula">
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
 
-			</a>
-    </div>
+</div>
+
+    <h2>Top Rated</h2>
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-5@m uk-grid top-rated">
+
+        <!-- <li>
+            <div class="uk-panel">
+                <img src="images/slidfsdfdsfder1.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>1</h1></div>
+            </div>
+        </li> -->
+
+
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
   </div>
 
   <!--  <footer>
@@ -88,6 +121,6 @@
       <ul class="politicasydetalles">
       </ul>
     </footer> -->
-    <script src= ..aca va el link js..> </scipt>
+    <script src="js/index.js"> </script>
   </body>
 </html>

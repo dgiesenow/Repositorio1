@@ -1,3 +1,5 @@
+var apikey= "6695f769d740495966218b5ad75558be";
+
 var buscador = document.querySelector('#searchForm');
 var campoPalabra = document.querySelector('#search_word');
 var campoCategorias = document.querySelector('#categories');
