@@ -13,8 +13,23 @@ fetch (url)
   .then(function (informacion) {
     console.log(informacion);
     // Aca haces las cosas
-    
+    var detalle = document.querySelector(".overview")
+    var elementsHtml = '';
+    for (var i = 0; i < informacion.results.length; i++) {
+      // console.log(informacion.results[i].name);
+      // console.log(informacion.results[i].id);
+      // console.log(informacion.results[i].poster_path);
+       elementsHtml += `
+          <div class="overview">
+              <p class="overview1">
+              </p>
+          </div>
+      `;
+
+    }
+    ul.innerHTML = elementsHtml;
   })
+
   .catch(function (errors) {
       console.log(errors);
   });
