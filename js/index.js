@@ -85,7 +85,7 @@ window.onload= function () {
             console.log(informacion.results[i].id);
             console.log(informacion.results[i].poster_path);
 
-            var ul = document.querySelector (".On Air")
+            var ul = document.querySelector (".onair")
             var elementsHtml ='<li>'
              elementsHtml +='<div class="uk-panel">'
              elementsHtml +='<img src="https://image.tmdb.org/t/p/original' + informacion.results[i].poster_path + '" elements>'
