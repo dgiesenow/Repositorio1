@@ -5,7 +5,7 @@ window.onload= function () {
   	})
   	.then(function (informacion) {
 
-      // console.log(informacion.results); Esto es para que funcione el detalle.  
+      // console.log(informacion.results); Esto es para que funcione el detalle.
       var ul = document.querySelector(".populares")
       var elementsHtml = '';
 
@@ -49,6 +49,7 @@ window.onload= function () {
         var ul = document.querySelector (".top-rated")
         var elementsHtml ='<li>'
          elementsHtml +='<div class="uk-panel">'
+         elementsHtml +='<a href="detalle.html?idSerie=${informacion.results[i].id}">'
          elementsHtml +='<img src="https://image.tmdb.org/t/p/original' + informacion.results[i].poster_path + '" elements>'
          elementsHtml +='</div> </li>'
          ul.innerHTML += elementsHtml
@@ -101,6 +102,7 @@ window.onload= function () {
             var ul = document.querySelector (".onair")
             var elementsHtml ='<li>'
              elementsHtml +='<div class="uk-panel">'
+             elementsHtml +='<a href="detalle.html?idSerie=${informacion.results[i].id}">'
              elementsHtml +='<img src="https://image.tmdb.org/t/p/original' + informacion.results[i].poster_path + '" elements>'
              elementsHtml +='</div> </li>'
              ul.innerHTML += elementsHtml
