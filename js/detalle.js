@@ -12,49 +12,19 @@ fetch (url)
   })
   .then(function (informacion) {
     console.log(informacion);
-    // Aca haces las cosas
-    var detalle = document.querySelector(".overview")
-    var elementsHtml = '';
-    for (var i = 0; i < informacion.results.length; i++) {
-      // console.log(informacion.results[i].name);
-      // console.log(informacion.results[i].id);
-      // console.log(informacion.results[i].poster_path);
-       elementsHtml += `
-          <div class="overview">
-              <p class="overview1">
-              </p>
-          </div>
-      `;
+    console.log(informacion.overview);
+    console.log(informacion.name);
+    console.log(informacion.genres);
+    console.log(informacion.poster_path);
 
-    }
-    ul.innerHTML = elementsHtml;
+    var ul = document.querySelector(".infor")
+    var elementsHtml = '<li>'
+    elementsHtml += '<img src="https://image.tmdb.org/t/p/original' + informacion[i].poster_path
+    elementsHtml += '</li>'
+    ul.innerHTML += elementsHtml
+
   })
 
   .catch(function (errors) {
       console.log(errors);
   });
-  //
-  //
-  // fetch(url)
-  //   .then(function (res) {
-  //     return res.json();
-  //   })
-  //   .then(function (informacion) {
-  //     console.log(informacion.results);
-  //     for (var i = 0; i < informacion.results.length; i++) {
-  //       informacion.results[i]
-  //       console.log(informacion.results[i].name);
-  //       console.log(informacion.results[i].id);
-  //       console.log(informacion.results[i].poster_path);
-  //       console.log(informacion.results[i].overview);
-  //
-  //       var buscadorGeneral = document.querySelector (".paginadetalles")
-  //       var elementsHtml ='<div class=" uk-card uk-card-default uk-card-body uk-width-1-5">'
-  //        elementsHtml +='<img src="https://image.tmdb.org/t/p/original' + informacion.results[i].poster_path + informacion.results[i].overview + console.log(informacion.results[i].name>'
-  //        elementsHtml +='</div> '
-  //        buscadorGeneral.innerHTML += elementsHtml
-  //     }
-  //     })
-  //   .catch(function (errors) {
-  //     console.log(errors);
-  //   });

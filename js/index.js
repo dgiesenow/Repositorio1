@@ -16,7 +16,7 @@ window.onload= function () {
          elementsHtml += `
           <li>
             <div class="uk-panel">
-              <a href="detalle.html?idSerie=${informacion.results[i].id}">
+              <a href="detalle.html?idSerie=`+informacion.results[i].id+`">
                 <img src="https://image.tmdb.org/t/p/original/${informacion.results[i].poster_path}" elements>
               </a>
             </div>
