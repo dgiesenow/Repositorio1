@@ -16,6 +16,10 @@ fetch(url)
       console.log(informacion.results[i].id);
       console.log(informacion.results[i].poster_path);
 
+// averiguar como hacer para selecionar lo que no tiene poster osea como se dice valor vacio
+      // var noEsta = function noMostrar()
+      //   if (informacion[i].poster_path )
+
       var buscadorGeneral = document.querySelector (".resultados_buscador")
       var elementsHtml ='<div class=" uk-card uk-card-default uk-card-body uk-width-1-5">'
        elementsHtml +='<img src="https://image.tmdb.org/t/p/original' + informacion.results[i].poster_path + '" elements>'

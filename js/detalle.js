@@ -17,10 +17,20 @@ fetch (url)
     console.log(informacion.genres);
     console.log(informacion.poster_path);
 
-    var ul = document.querySelector(".infor")
-    var elementsHtml = '<li>'
-    elementsHtml += '<img src="https://image.tmdb.org/t/p/original' + informacion[i].poster_path
-    elementsHtml += '</li>'
+    var ul = document.querySelector(".todo")
+    var elementsHtml = '<div class="todo">'
+    elementsHtml += '<div class="poster">'
+    elementsHtml += '<img src="https://image.tmdb.org/t/p/original"' + informacion.poster_path
+    elementsHtml += '</div>'
+    elementsHtml += '<div class="overview">'
+    elementsHtml += '<h1>' + informacion.name
+    elementsHtml += '</h1>'
+    elementsHtml += '<p>' + informacion.overview
+    elementsHtml += '</p>'
+    elementsHtml += '</div>'
+
+
+
     ul.innerHTML += elementsHtml
 
   })

@@ -42,7 +42,7 @@ nav li {
   font-size: 90%;
 }
 
-a {
+li a {
   text-decoration: none;
   color: white;
 }
@@ -58,12 +58,6 @@ a {
 
 .input {
   width: 85%;
-  font-size: 100%;
-
-}
-
-.searchbtn {
-  width: 14%;
   font-size: 100%;
 
 }

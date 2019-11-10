@@ -3,16 +3,44 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--Letra google Montserrat-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <!-- UIkit CSS -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
-
-     <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
   </head>
   <body>
   <script type="text/javascript" src="js/resultados.js"> </script>
+  <!-- UIkit JS -->
+ <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
+ 
+  <nav class="navbargeneral">
+    <h2 class="h2nav"> TFS </h2>
+    <ul class="ulnav">
+      <li><a href="index.html">Home</a></li>
+      <li>Series</li>
+      <li><button class="uk-button uk-button-default genrebtn" type="button"><a href="genre.html">Genre</a> </button>
+        <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
+            <ul class="uk-nav uk-dropdown-nav">
+                <!-- <li class="uk-active"><a href="#">Active</a></li>
+                <li><a href="#">Item</a></li>
+                <li class="uk-nav-header">Header</li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#">Item</a></li> -->
+            </ul>
+        </div>
+      </li>
+    </ul>
+    <!--pense que aca podemos adjuntas la pagina de login*/
+    <button class="loginbtn"-->
+  <button class="loginbutton">Log in</button>
+  </nav>
+
   <div class="resultados_buscador uk-flex uk-width-1-1 uk-flex-wrap">
+
 
   </div>
   </body>

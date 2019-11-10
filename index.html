@@ -25,26 +25,31 @@
       <ul class="ulnav">
         <li><a href="index.html">Home</a></li>
         <li>Series</li>
-        <li> Movies </li>
-        <li>gener</li>
-
+        <li><button class="uk-button uk-button-default genrebtn" type="button"><a href="genre.html">Genre</a> </button>
+          <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
+              <ul class="uk-nav uk-dropdown-nav">
+                  <!-- <li class="uk-active"><a href="#">Active</a></li>
+                  <li><a href="#">Item</a></li>
+                  <li class="uk-nav-header">Header</li>
+                  <li><a href="#">Item</a></li>
+                  <li><a href="#">Item</a></li>
+                  <li class="uk-nav-divider"></li>
+                  <li><a href="#">Item</a></li> -->
+              </ul>
+          </div>
+        </li>
       </ul>
       <!--pense que aca podemos adjuntas la pagina de login*/
       <button class="loginbtn"-->
     <button class="loginbutton">Log in</button>
     </nav>
+
     <div class="banner">
     </div>
     <br>
     <br>
     <br>
     <div class="search">
-    <!--este es el div para la barra de navegacion, la podemos mover arriba dsps si te copa mas. ver de cambiar nombres asi queda mas claro también-->
-     <!--<form class="formsearch">
-      <input class="input" type="search" placeholder="Search" aria-label="Search">
-      estaria bueno averiguar como hacer para que se haga submit con el boton enter del teclado, lo podemos preguntar la clase que viene-->
-         <!--<button class="searchbtn" type="submit"> Search </button>
-     </form> -->
      <form action= "resultados.html" method="GET" class="searchForm">
      		<input type="text" name="search_word" id="search_word" aria-label="search" placeholder="Buscar">
      		<br>
@@ -59,7 +64,7 @@
      		</select> -->
      		<br>
      	</form>
-     	<script src="js/buscador.js"></script>
+     	<script type="text/javascript" src="js/buscador.js"></script>
     </div>
 <div class="peliculas" id="peliculas">
 
