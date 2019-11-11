@@ -18,7 +18,6 @@ fetch (url)
     console.log(informacion.genres);
     console.log(informacion.poster_path);
 
-<<<<<<< Updated upstream
     var ul = document.querySelector(".todo")
     var elementsHtml = '<div class="todo">'
     elementsHtml += '<div class="poster">'
@@ -34,13 +33,12 @@ fetch (url)
 
 
     ul.innerHTML += elementsHtml
-=======
+
     var contenedorImagen = document.querySelector(".imagen")
     var contenedorTexto = document.querySelector(".overview")
     contenedorImagen.innerHTML = '<img src="https://image.tmdb.org/t/p/original"' + informacion.poster_path+' >'
     contenedorTexto.innerHTML += '<p>' + informacion.overview+' </p>'
     // Aca haces las cosas
->>>>>>> Stashed changes
 
   })
 
