@@ -100,6 +100,7 @@ window.onload= function () {
             console.log(informacion.results[i].poster_path);
 
             var ul = document.querySelector (".onair")
+            console.log(ul);
             var elementsHtml ='<li>'
              elementsHtml +='<div class="uk-panel">'
              elementsHtml +='<a href="detalle.html?idSerie=${informacion.results[i].id}">'

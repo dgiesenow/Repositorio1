@@ -14,58 +14,79 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
   </head>
 <body>
-   <!-- dropdown para generos
-  <button type="button"></button>
-  <div uk-dropdown>
-      <ul class="uk-nav uk-dropdown-nav">...</ul>
-  </div> -->
+
 
     <nav class="navbargeneral">
       <h2 class="h2nav"> TFS </h2>
       <ul class="ulnav">
         <li><a href="index.html">Home</a></li>
         <li>Series</li>
-        <li><button class="uk-button uk-button-default genrebtn" type="button"><a href="genre.html">Genre</a> </button>
-          <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
-              <ul class="uk-nav uk-dropdown-nav">
-                  <!-- <li class="uk-active"><a href="#">Active</a></li>
-                  <li><a href="#">Item</a></li>
-                  <li class="uk-nav-header">Header</li>
-                  <li><a href="#">Item</a></li>
-                  <li><a href="#">Item</a></li>
-                  <li class="uk-nav-divider"></li>
-                  <li><a href="#">Item</a></li> -->
-              </ul>
-          </div>
-        </li>
+        <li><a href="genre.html">
+        <button class="uk-button uk-button-default" type="button">Gener</button>
+        <div uk-dropdown>
+            <ul class="uk-nav uk-dropdown-nav">
+                <li class="uk-active"><a href="#">Fivvion</a></li>
+                <li><a href="#">Item</a></li>
+                <li class="uk-nav-header">Header</li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#">Item</a></li>
+            </ul>
+        </div>
+      </li>
+
+
+
+<!-- esto es para el slideshow de arriva que reemplaza la foto
+        <! <div class="uk-h3">Fade</div>
+
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade">
+
+            <ul class="uk-slideshow-items">
+                <li>
+                    <img src="images/photo.jpg" alt="" uk-cover>
+                </li>
+                <li>
+                    <img src="images/dark.jpg" alt="" uk-cover>
+                </li>
+                <li>
+                    <img src="images/light.jpg" alt="" uk-cover>
+                </li>
+            </ul>
+
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+        </div> -->
+
+
+
+
+
       </ul>
       <!--pense que aca podemos adjuntas la pagina de login*/
       <button class="loginbtn"-->
-    <button class="loginbutton">Log in</button>
-    </nav>
+      <!-- yo tnego entendido que no hay que hacer in login (?) -->
+    <!-- <button class="loginbutton">Log in</button>
+    </nav> -->
+    <div class="search">
+
+
+    <form class="uk-search uk-search-large" action= "resultados.html" method="GET" class="searchForm">
+          <span uk-search-icon></span>
+          <input class="uk-search-input" type="search" placeholder="Search...">
+      </form>
+      </div>
+
 
     <div class="banner">
     </div>
-    <br>
-    <br>
-    <br>
-    <div class="search">
-     <form action= "resultados.html" method="GET" class="searchForm">
-     		<input type="text" name="search_word" id="search_word" aria-label="search" placeholder="Buscar">
-     		<br>
-
-     		<!-- <label></label> Categorías:</label>
-     		<select name="categories" id="categories">
-     			<option value="">Elegí una categoría</option>
-     			<option value="cats">Comedia</option>
-     			<option value="dogs">Tragedia</option>
-     			<option value="unicorns">Terror
-          </option>
-     		</select> -->
-     		<br>
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
      	</form>
      	<script type="text/javascript" src="js/buscador.js"></script>
-    </div>
+    </div> -->
 <div class="peliculas" id="peliculas">
 
     <h2>Popular</h2>
@@ -101,7 +122,7 @@
       <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
     </div>
 
-    <h2>On Air</h2>
+    <h2>On air</h2>
       <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
           <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-5@m uk-grid onair">
 
