@@ -6,13 +6,12 @@ var idSerie = parametrosURL.get('idSerie')
 
 var url = `https://api.themoviedb.org/3/tv/${idSerie}?api_key=6695f769d740495966218b5ad75558be&language=en-US`;
 
-fetch (url)
+fetch(url)
   .then(function (res) {
     return res.json();
   })
-  .then(function (informacion) {
+  .then(function(informacion) {
     console.log(informacion);
-
     console.log(informacion.overview);
     console.log(informacion.name);
     console.log(informacion.genres);
@@ -29,10 +28,10 @@ fetch (url)
     elementsHtml += '<p>' + informacion.overview
     elementsHtml += '</p>'
     elementsHtml += '</div>'
+// falta agruegar caracteristicas q se agruegan de la misma manera con elementshtml +=
 
 
-
-    ul.innerHTML += elementsHtml
+    ul.innerHTML += elementsHtml;
 
     var contenedorImagen = document.querySelector(".imagen")
     var contenedorTexto = document.querySelector(".overview")

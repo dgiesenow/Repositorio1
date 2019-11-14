@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../Repositorio1-master/css/style.css">
     <!--Letra google Montserrat-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <!-- UIkit CSS -->
@@ -14,30 +14,29 @@
   <!-- UIkit JS -->
  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
- 
-  <nav class="navbargeneral">
-    <h2 class="h2nav"> TFS </h2>
-    <ul class="ulnav">
-      <li><a href="index.html">Home</a></li>
-      <li>Series</li>
-      <li><button class="uk-button uk-button-default genrebtn" type="button"><a href="genre.html">Genre</a> </button>
-        <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
-            <ul class="uk-nav uk-dropdown-nav">
-                <!-- <li class="uk-active"><a href="#">Active</a></li>
-                <li><a href="#">Item</a></li>
-                <li class="uk-nav-header">Header</li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="#">Item</a></li> -->
-            </ul>
-        </div>
-      </li>
-    </ul>
-    <!--pense que aca podemos adjuntas la pagina de login*/
-    <button class="loginbtn"-->
-  <button class="loginbutton">Log in</button>
-  </nav>
+
+ <!-- header -->
+ <header>
+   <nav class="uk-navbar-container uk-navbar uk-navbar-transparent">
+     <h1 class="left"><img src="../Repositorio1-master/img/logo1.png" alt="0" class="logo"></h1>
+     <ul class="center ">
+       <li><a href="../Repositorio1-master/index.html">Home</a></li>
+       <li>Series</li>
+       <li><a href="../Repositorio1-master/genre.html">Genre</a></li>
+     </ul>
+     <ul class="right">
+       <li>login</li>
+       <li><button type="button"><img src="../Repositorio1-master/img/download.png" alt="0" class="lupa"></li></button>
+         <div uk-dropdown>
+           <ul class="uk-nav uk-dropdown-nav"><div class="search">
+             <form class="uk-search-large" action="buscador.html" method="get">
+               <input type="text" name="searchbox" value="" placeholder="Search..">
+             </form>
+           </div></ul>
+         </div>
+     </ul>
+   </nav>
+ </header>
 
   <div class="resultados_buscador uk-flex uk-width-1-1 uk-flex-wrap">
 

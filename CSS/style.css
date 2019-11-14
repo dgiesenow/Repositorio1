@@ -4,77 +4,56 @@
 }
 
 nav {
-  display: flex;
-  flex-wrap: wrap;
-  /* border: solid 1px black; */
-  justify-content: space-between;
-  color: white;
-  /* background-color: black; */
-  padding: 0.5%;
-  height: 105px;
-  font-family: 'Montserrat', sans-serif;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0e0e0e+45,7d7e7d+97&1+62,0+100 */
-  background: -moz-linear-gradient(top,  rgba(14,14,14,1) 45%, rgba(50,51,50,1) 62%, rgba(125,126,125,0.08) 97%, rgba(125,126,125,0) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgba(14,14,14,1) 45%,rgba(50,51,50,1) 62%,rgba(125,126,125,0.08) 97%,rgba(125,126,125,0) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgba(14,14,14,1) 45%,rgba(50,51,50,1) 62%,rgba(125,126,125,0.08) 97%,rgba(125,126,125,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0e0e', endColorstr='#007d7e7d',GradientType=0 ); /* IE6-9 */
+   padding-left: 1%;
+   padding-top: 1%;
+   justify-content: space-between;
+ }
 
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+  }
 
+  nav li a {
+    text-decoration: none;
+    color: black;
+  }
 
+  .logo {
+    width: 33%;
+  }
+
+  .lupa {
+    height: 30px;
+  }
+
+  .banner {
+    position: relative;
+    margin-bottom: 1%;
+  }
+
+   .banner ul {
+    height: 10%;
+  }
+
+  .frase {
+    position: absolute;
+    bottom: 4%;
+    left: 2%;
+    z-index: 10;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .tema {
+    padding: 1%;
+  }
+
+.pelis {
+    padding: 1%;
 }
-body{
-  background-image:url("../img1.jpg");
-  background-size:contain;
-
-  height: 360px;
-
-
-}
-
-.h2nav {
-  margin: 1%;
-  color: white;
-}
-
-.ulnav {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  justify-content: space-around;
-  margin: 1%;
-}
-
-nav li {
-  padding: inherit;
-}
-
-.search {
-
-  align-content: flex-end;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 40%;
-}
-
-li a {
-  text-decoration: none;
-  color: white;
-}
-
-.divsearch {
-  border: solid 1px black;
-}
-
-.formsearch {
-  padding-top: 2%;
-  justify-content: space-around;
-}
-
-.input {
-  width: 85%;
-  font-size: 100%;
-
-}
-
 .cartelera {
 	display: flex;
 	flex-wrap: wrap;
