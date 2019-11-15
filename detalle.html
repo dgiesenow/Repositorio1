@@ -24,15 +24,35 @@
        <h1 class="left"><img src="img/logo1.png" alt="0" class="logo"></h1>
        <ul class="center ">
          <li><a href="index.html">Home</a></li>
-         <li>Series</li>
-         <li><a href="genre.html">Genre</a></li>
+         <li><a>Series</a></li>
+         <li><a href="genre.html">
+           <button class="uk-button uk-button-default" type="button">Gender</button>
+   <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
+       <ul class="uk-nav uk-dropdown-nav">
+           <li class="uk-active"><a href="#">Active</a></li>
+           <li><a href="#">Item</a></li>
+           <li class="uk-nav-header">Header</li>
+           <li><a href="#">Item</a></li>
+           <li><a href="#">Item</a></li>
+           <li class="uk-nav-divider"></li>
+           <li><a href="#">Item</a></li>
+       </ul>
+   </div>
+   </li>
+           </ul>
+       </div>
+         </li>
+
        </ul>
        <ul class="right">
          <li>login</li>
-         <li><button type="button"><img src="img/download.png" alt="0" class="lupa"></li></button>
+         <!-- <li><button type="button"><img src="img/download.png" alt="0" class="lupa"></li></button> -->
+         <span class="uk-margin-small-right" ></span>
+
+         <a href="" uk-icon="search"></a>
            <div uk-dropdown>
              <ul class="uk-nav uk-dropdown-nav"><div class="search">
-               <form class="uk-search-large" action="buscador.html" method="get">
+               <form class="uk-search-large" action="resultados.html" method="get">
                  <input type="text" name="searchbox" value="" placeholder="Search..">
                </form>
              </div></ul>

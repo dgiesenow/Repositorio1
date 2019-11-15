@@ -14,11 +14,18 @@ nav {
     display: flex;
     flex-wrap: wrap;
     color: black;
+    width: 370px;
+    height: 100px;
+
   }
 
   nav li a {
     text-decoration: none;
     color: black;
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .logo {
