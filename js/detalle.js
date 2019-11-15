@@ -21,7 +21,7 @@ fetch(url)
     var elementsHtml = '<div class="todo">'
     elementsHtml += '<div class="poster">'
     // elementsHtml += '<img src="https://image.tmdb.org/t/p/original' + informacion.poster_path
-    elementsHtml += '<img src="https://image.tmdb.org/t/p/original' + informacion.results[i].poster_path + '" >'
+    elementsHtml += '<img src="https://image.tmdb.org/t/p/original' + informacion.poster_path + '" >'
     elementsHtml += '</div>'
     elementsHtml += '<div class="overview">'
     elementsHtml += '<h1>' + informacion.name

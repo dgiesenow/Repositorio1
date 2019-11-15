@@ -1,105 +1,68 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="css/style.css">
-    <!--Letra google Montserrat-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+      <meta charset="utf-8">
+      <title>LALA</title>
+        <script type="text/javascript" src="js/genre.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
+      <link rel="stylesheet" href="css/style.css">
+      <!--Letra google Montserrat-->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
-    <!-- UIkit CSS -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
+      <!-- UIkit CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
 
   </head>
   <body>
-    <!-- <script type="text/javascript" scr="js/Genre.js">
-    </script> -->
-    <!-- UIkit JS -->
-   <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
-   <!-- header -->
-   <header>
-     <nav class="uk-navbar-container uk-navbar uk-navbar-transparent">
-       <h1 class="left"><img src="img/logo1.png" alt="0" class="logo"></h1>
-       <ul class="center ">
-         <li><a href="index.html">Home</a></li>
-         <li><a>Series</a></li>
-         <li><a href="genre.html">
-           <button class="uk-button uk-button-default" type="button">Gender</button>
-   <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
-       <ul class="uk-nav uk-dropdown-nav">
-           <li class="uk-active"><a href="#">Active</a></li>
-           <li><a href="#">Item</a></li>
-           <li class="uk-nav-header">Header</li>
-           <li><a href="#">Item</a></li>
-           <li><a href="#">Item</a></li>
-           <li class="uk-nav-divider"></li>
-           <li><a href="#">Item</a></li>
-       </ul>
-   </div>
-   </li>
-           </ul>
-       </div>
-         </li>
-
-       </ul>
-       <ul class="right">
-         <li>login</li>
-         <!-- <li><button type="button"><img src="img/download.png" alt="0" class="lupa"></li></button> -->
-         <span class="uk-margin-small-right" ></span>
-
-         <a href="" uk-icon="search"></a>
-           <div uk-dropdown>
-             <ul class="uk-nav uk-dropdown-nav"><div class="search">
-               <form class="uk-search-large" action="resultados.html" method="get">
-                 <input type="text" name="searchbox" value="" placeholder="Search..">
-               </form>
-             </div></ul>
-           </div>
-       </ul>
-     </nav>
-   </header>
-
-
-
-      <div  class="genero">
-        <ul class="porgenero">
-          <li class="idGenero"></li>
-
-        </ul>
-
-          <!-- <h2 class="tema">Popular</h2>
-        <div class="uk-position-relative uk-visible-toggle uk-light pelis" tabindex="-1" uk-slider>
-          <ul class="uk-slider-items uk-child-width-1-4 uk-child-width-1-5@m uk-grid populares">
-          </ul>
-
-          <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-          <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-        </div>
-
-        <h2 class="tema">Top Rated</h2>
-          <div class="uk-position-relative uk-visible-toggle uk-light pelis" tabindex="-1" uk-slider>
-              <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-5@m uk-grid top-rated">
-              </ul>
-            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-          </div>
-
-          <h2 class="tema">On air</h2>
-            <div class="uk-position-relative uk-visible-toggle uk-light pelis" tabindex="-1" uk-slider>
-                <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-5@m uk-grid onair">
+    <!-- header -->
+    <header>
+      <nav class="uk-navbar-container uk-navbar uk-navbar-transparent">
+        <h1 class="left"><img src="img/logo1.png" alt="0" class="logo"></h1>
+        <ul class="center ">
+          <li><a href="index.html">Home</a></li>
+          <li><a>Log In</a></li>
+          <li><a href="genre.html">
+            <button class="uk-button uk-button-default" type="button">Genre</button>
+             <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
+                <ul class="uk-nav uk-dropdown-nav" id="generos-menu">
+                  <li>
+                    <div  class="genero">
+                      <ul class="genero">
+                        <li class="idGenero"></li>
+                      </ul>
+                    </li>
+                  </div>
                 </ul>
-              <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-              <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-            </div> -->
-      </div>
+             </div>
+           </li>
+        </ul>
+        <ul class="right">
+            <li>
+              <a href="" uk-icon="search"></a>
+               <div uk-dropdown>
+                <ul class="uk-nav uk-dropdown-nav">
+                  <div class="search">
+                    <form class="uk-search-large" action="resultados.html" method="get">
+                      <input type="text" name="searchbox" value="" placeholder="Search..">
+                    </form>
+                  </div>
+                </ul>
+              </div>
+            </li>
+            <li><span uk-icon="more"></span></li>
+            <!-- <li><button type="button"><img src="img/download.png" alt="0" class="lupa"></li></button> -->
+            <span class="uk-margin-small-right" ></span>
+          </ul>
+      </nav>
+    </header>
 
+     <ul id="listado-generos">
+     </ul>
 
-
-
-      <!-- <li>Comedia</li> -->
-    </ul>
-    <script type="text/javascript" scr="js/Genre.js">
-    </script>
   </body>
 </html>
+
+<!-- <script type="text/javascript" scr="js/Genre.js">
+</script> -->
+<!-- UIkit JS -->

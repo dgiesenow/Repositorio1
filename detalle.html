@@ -9,6 +9,7 @@
 
     <!-- UIkit CSS -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
+   <script type="text/javascript" src="js/genre.js"></script>
 
   </head>
   <body>
@@ -24,46 +25,44 @@
        <h1 class="left"><img src="img/logo1.png" alt="0" class="logo"></h1>
        <ul class="center ">
          <li><a href="index.html">Home</a></li>
-         <li><a>Series</a></li>
+         <li><a>Log In</a></li>
          <li><a href="genre.html">
-           <button class="uk-button uk-button-default" type="button">Gender</button>
-   <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
-       <ul class="uk-nav uk-dropdown-nav">
-           <li class="uk-active"><a href="#">Active</a></li>
-           <li><a href="#">Item</a></li>
-           <li class="uk-nav-header">Header</li>
-           <li><a href="#">Item</a></li>
-           <li><a href="#">Item</a></li>
-           <li class="uk-nav-divider"></li>
-           <li><a href="#">Item</a></li>
-       </ul>
-   </div>
-   </li>
-           </ul>
-       </div>
-         </li>
-
+           <button class="uk-button uk-button-default" type="button">Genre</button>
+            <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
+               <ul class="uk-nav uk-dropdown-nav" id="generos-menu">
+                 <li>
+                   <div  class="genero">
+                     <ul class="genero">
+                       <li class="idGenero"></li>
+                     </ul>
+                   </li>
+                 </div>
+               </ul>
+            </div>
+          </li>
        </ul>
        <ul class="right">
-         <li>login</li>
-         <!-- <li><button type="button"><img src="img/download.png" alt="0" class="lupa"></li></button> -->
-         <span class="uk-margin-small-right" ></span>
-
-         <a href="" uk-icon="search"></a>
-           <div uk-dropdown>
-             <ul class="uk-nav uk-dropdown-nav"><div class="search">
-               <form class="uk-search-large" action="resultados.html" method="get">
-                 <input type="text" name="searchbox" value="" placeholder="Search..">
-               </form>
-             </div></ul>
-           </div>
-       </ul>
+           <li>
+             <a href="" uk-icon="search"></a>
+              <div uk-dropdown>
+               <ul class="uk-nav uk-dropdown-nav">
+                 <div class="search">
+                   <form class="uk-search-large" action="resultados.html" method="get">
+                     <input type="text" name="searchbox" value="" placeholder="Search..">
+                   </form>
+                 </div>
+               </ul>
+             </div>
+           </li>
+           <li><span uk-icon="more"></span></li>
+           <!-- <li><button type="button"><img src="img/download.png" alt="0" class="lupa"></li></button> -->
+           <span class="uk-margin-small-right" ></span>
+         </ul>
      </nav>
    </header>
 
     <h2>Detalles</h2>
-    <div class="todo">
-      </div>
+    <div class="todo uk-child-width-1-2 uk-child-width-1-5@m">
     </div>
     <script src="js/detalle.js"></script>
   </body>
