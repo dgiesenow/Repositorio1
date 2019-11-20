@@ -1,4 +1,3 @@
-// //constructor para agarrar la variable genero y  poner las series
 window.addEventListener('load',function(){
   var queryString = new URLSearchParams(window.location.search)
   var idGenero = queryString.get("idGenero");
@@ -6,8 +5,7 @@ window.addEventListener('load',function(){
   var apikey= "6695f769d740495966218b5ad75558be";
   var url = "https://api.themoviedb.org/3/genre/tv/list?api_key="+apikey+"&language=en-US";
   // esto es para que se ponga el titulo del genero segun genero
-
-   var ul = document.querySelector('#generos-menu')
+   var select = document.querySelector('.select-genre')
   // //SERIES POR GENERO
   fetch(url)
    .then(function(respuesta) {
@@ -17,7 +15,7 @@ window.addEventListener('load',function(){
      console.log(informacion);
       var id = informacion.id
       for (var genero of informacion.genres){
-        ul.innerHTML += `<li><a href="genre.html?iddeGenero=${genero.id}&nombreDeGenero=${genero.name}">` + genero.name + '</a></li>';
+        select.innerHTML += `<option value=${genero.id}>` + genero.name + `</option>`;
       }
   })
    .catch(function(error) {
@@ -25,6 +23,8 @@ window.addEventListener('load',function(){
    })
 });
 
+// no quiero que se vean
+
 window.addEventListener('load',function(){
   var queryString = new URLSearchParams(window.location.search)
   var idGenero = queryString.get("idGenero");
@@ -32,8 +32,7 @@ window.addEventListener('load',function(){
   var apikey= "6695f769d740495966218b5ad75558be";
   var url = "https://api.themoviedb.org/3/genre/tv/list?api_key="+apikey+"&language=en-US";
   // esto es para que se ponga el titulo del genero segun genero
-  
-   var ul2 = document.querySelector('#listado-generos')
+   var radio = document.querySelector('.no')
   // //SERIES POR GENERO
   fetch(url)
    .then(function(respuesta) {
@@ -43,7 +42,7 @@ window.addEventListener('load',function(){
      console.log(informacion);
       var id = informacion.id
       for (var genero of informacion.genres){
-        ul2.innerHTML += `<li><a href="genre.html?iddeGenero=${genero.id}&nombreDeGenero=${genero.name}">` + genero.name + '</a></li>';
+        radio.innerHTML += `<option value=${genero.id}>` + genero.name + `</option>`;
       }
   })
    .catch(function(error) {
