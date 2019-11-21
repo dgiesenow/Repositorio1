@@ -1,9 +1,10 @@
+window.addEventListener('load',function(){
 var queryString = new URLSearchParams(location.search);
-var busqueda = queryString.get ('Wanted' 'Unwanted' 'año');
+var generQuiere = queryString.get ('Wanted');
+var generNoQuiere = queryString.get('Unwanted');
+var anio = queryString.get('año');
 
-
-// var url = "https://api.themoviedb.org/3/discover/tv?api_key=6695f769d740495966218b5ad75558be&language=en-US&sort_by=popularity.desc&first_air_date_year=$`{'año'}`&page=1&timezone=America%2FNew_York&include_null_first_air_dates=false" + busqueda;
-
+var url = 
 fetch(url)
   .then(function (res) {
     return res.json();
@@ -30,3 +31,4 @@ fetch(url)
   .catch(function (errors) {
     console.log(errors);
   });
+})
