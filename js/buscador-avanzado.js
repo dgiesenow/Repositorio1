@@ -56,10 +56,11 @@ window.addEventListener('load',function(){
    })
 
 
-
+    var radio3 = document.querySelector('.año')
    for (var i = 1950 ; i > 2020 ; i++) {
      console.log(i);
      radio3.innerHTML+= '< option value = >'+ i + '</option>';
+
    }
 
 });
