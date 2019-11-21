@@ -7,7 +7,7 @@ window.addEventListener('load',function(){
   // esto es para que se ponga el titulo del genero segun genero
    var select = document.querySelector('.select-genre')
   // //SERIES POR GENERO
-  fetch(url)
+  fetch("https://api.themoviedb.org/3/discover/tv?api_key=6695f769d740495966218b5ad75558be&language=en-US&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&include_null_first_air_dates=false");
    .then(function(respuesta) {
      return respuesta.json()
    })
@@ -34,7 +34,7 @@ window.addEventListener('load',function(){
   // esto es para que se ponga el titulo del genero segun genero
    var radio = document.querySelector('.no')
   // //SERIES POR GENERO
-  fetch(url)
+  fetch("https://api.themoviedb.org/3/discover/tv?api_key=6695f769d740495966218b5ad75558be&language=en-US&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&include_null_first_air_dates=false");
    .then(function(respuesta) {
      return respuesta.json()
    })

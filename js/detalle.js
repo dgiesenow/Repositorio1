@@ -71,3 +71,47 @@ fetch(url)
   //   .catch(function (errors) {
   //     console.log(errors);
   //   });
+
+  var parametrosURL = new URLSearchParams(location.search);
+  console.log(parametrosURL.get('idSerie'));
+
+  var idSerie = parametrosURL.get('idSerie')
+  fetch(url)
+    .then(function (res) {
+      return res.json();
+    })
+    .then(function(informacion) {
+      console.log(informacion);
+      console.log(informacion.overview);
+      console.log(informacion.name);
+      console.log(informacion.genres);
+      console.log(informacion.poster_path);
+
+      var ul = document.querySelector(".todo")
+      var elementsHtml = '<div class="todo">'
+      elementsHtml += '<div class="poster">'
+      // elementsHtml += '<img src="https://image.tmdb.org/t/p/original' + informacion.poster_path
+      elementsHtml += '<img src="https://image.tmdb.org/t/p/original' + informacion.poster_path + '" >'
+      elementsHtml += '</div>'
+      elementsHtml += '<div class="overview">'
+      elementsHtml += '<h1>' + informacion.name
+      elementsHtml += '</h1>'
+      elementsHtml += '<p>' + informacion.overview
+      elementsHtml += '</p>'
+      elementsHtml += '</div>'
+  // falta agruegar caracteristicas q se agruegan de la misma manera con elementshtml +=
+
+
+      ul.innerHTML += elementsHtml;
+
+      var contenedorImagen = document.querySelector(".imagen")
+      var contenedorTexto = document.querySelector(".overview")
+      contenedorImagen.innerHTML = '<img src="https://image.tmdb.org/t/p/original"' + informacion.poster_path+' >'
+      contenedorTexto.innerHTML += '<p>' + informacion.overview+' </p>'
+      // Aca haces las cosas
+
+    })
+
+    .catch(function (errors) {
+        console.log(errors);
+    });
