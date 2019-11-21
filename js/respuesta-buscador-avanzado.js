@@ -4,7 +4,7 @@ var generQuiere = queryString.get ('Wanted');
 var generNoQuiere = queryString.get('Unwanted');
 var anio = queryString.get('año');
 
-var url = 
+var url =
 fetch(url)
   .then(function (res) {
     return res.json();

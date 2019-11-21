@@ -26,6 +26,16 @@
 // no quiero que se vean
 
 window.addEventListener('load',function(){
+  var radio3 = document.querySelector(".año")
+  var opcionesFe;
+  for (var i = 1950 ; i < 2020 ; i++) {
+   opcionesFe = '<option>'
+   opcionesFe += i
+   opcionesFe += '</option>'
+   radio3.innerHTML += opcionesFe
+
+
+ }
   var queryString = new URLSearchParams(window.location.search)
   var idGenero = queryString.get("idGenero");
   var genero = queryString.get("genero");
@@ -56,11 +66,6 @@ window.addEventListener('load',function(){
    })
 
 
-    var radio3 = document.querySelector('.año')
-   for (var i = 1950 ; i > 2020 ; i++) {
-     console.log(i);
-     radio3.innerHTML+= '< option value = >'+ i + '</option>';
 
-   }
 
 });
