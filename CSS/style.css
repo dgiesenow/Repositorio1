@@ -119,8 +119,11 @@ background-color: white;
 }
 
 .logoTmdb img{
-  height: 100px;
-  width: 230px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  height: 60px;
+  width: 150px;
   position: relative;
   left: 850px;
   top: 31px;
