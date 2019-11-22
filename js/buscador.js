@@ -22,7 +22,13 @@ console.log(searchedWord);
        // console.log(informacion.results[i].poster_path);
         elementsHtml += `<div class="resultados uk-card uk-card-default uk-card-body uk-width-1-5">`
         elementsHtml +=`<a href="detalle.html?idSerie=${informacion.results[i].id}">`
-        elementsHtml += '<img src="https://image.tmdb.org/t/p/original' + informacion.results[i].poster_path + '" >'
+        if(informacion.results[i].poster_path){
+          elementsHtml += '<img src="https://image.tmdb.org/t/p/original' + informacion.results[i].poster_path + '" ></a>'
+
+        }else {
+          elementsHtml += '<strong>'+ informacion.results[i].name + '</strong>';
+
+        }
         elementsHtml += '</div>'
 
 

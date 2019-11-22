@@ -2,7 +2,9 @@
 * {
   box-sizing: border-box;
 }
-
+.relacionSerie .poster{
+  opacity: 1!important;
+}
 nav {
    padding-left: 1%;
    padding-top: 1%;
@@ -96,7 +98,7 @@ nav {
 	width: 960px;
 	border: solid 1px green;
 	margin: auto;
-} //
+}
 
 #peliculas {
   border: solid 1px black;
@@ -119,8 +121,11 @@ background-color: white;
 }
 
 .logoTmdb img{
-  height: 100px;
-  width: 230px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  height: 60px;
+  width: 150px;
   position: relative;
   left: 850px;
   top: 31px;

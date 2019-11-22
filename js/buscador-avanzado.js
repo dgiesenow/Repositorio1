@@ -26,24 +26,27 @@
 // no quiero que se vean
 
 window.addEventListener('load',function(){
-  var radio3 = document.querySelector(".año")
-  var opcionesFe;
-  for (var i = 1950 ; i < 2020 ; i++) {
-   opcionesFe = '<option>'
-   opcionesFe += i
-   opcionesFe += '</option>'
-   radio3.innerHTML += opcionesFe
+  if(document.querySelector(".año")){
+    var radio3 = document.querySelector(".año")
+    var opcionesFe;
+    for (var i = 1950 ; i < 2020 ; i++) {
+     opcionesFe = '<option>'
+     opcionesFe += i
+     opcionesFe += '</option>'
+     radio3.innerHTML += opcionesFe
 
 
+
+   }
  }
-  var queryString = new URLSearchParams(window.location.search)
+  var queryString = new URLSearchParams(window.location.href)
   var idGenero = queryString.get("idGenero");
   var genero = queryString.get("genero");
   var apikey= "6695f769d740495966218b5ad75558be";
   var url = "https://api.themoviedb.org/3/genre/tv/list?api_key="+apikey+"&language=en-US";
   // esto es para que se ponga el titulo del genero segun genero
   // //SERIES POR GENERO
-
+  console.log('Entra2',queryString)
 
   fetch(url)
    .then(function(respuesta) {

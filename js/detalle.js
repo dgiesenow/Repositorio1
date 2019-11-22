@@ -81,7 +81,7 @@ fetch(url)
 
 
 
-  var relacionadas ='https://api.themoviedb.org/3/tv/"+idSerie+"/recommendations?api_key=6695f769d740495966218b5ad75558be&language=en-US&page=1';
+  var relacionadas ='https://api.themoviedb.org/3/tv/'+idSerie+'/recommendations?api_key=6695f769d740495966218b5ad75558be&language=en-US&page=1';
 
   fetch(relacionadas)
     .then(function(response) {
