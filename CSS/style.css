@@ -124,6 +124,17 @@ background-color: white;
   position: relative;
   left: 850px;
   top: 31px;
+}
+
+  /* #listado-generos {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #listado-generos img {
+    width: 250px
+  } */
 
 /* footer {
   border: solid 1px black;
