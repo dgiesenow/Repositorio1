@@ -24,6 +24,7 @@ fetch(url)
 
       var buscadorGeneral = document.querySelector (".resultados-buscador-avanzado")
       var elementsHtml ='<div class="uk-card uk-card-default uk-card-body uk-width-1-5">'
+        elementsHtml +=`<a href="detalle.html?idSerie=${informacion.results[i].id}">`
        elementsHtml +='<img src="https://image.tmdb.org/t/p/original' + informacion.results[i].poster_path + '" elements>'
        elementsHtml +='</div> '
        buscadorGeneral.innerHTML += elementsHtml
