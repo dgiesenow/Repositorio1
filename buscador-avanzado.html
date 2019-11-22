@@ -3,10 +3,53 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+   <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
   </head>
   <body>
     <script type="text/javascript" src="js/buscador-avanzado.js"></script>
     <script type="text/javascript" src="js/respuesta-buscador-avanzado.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/buscador.js"></script>
+    <script type="text/javascript" src="js/genre.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+
+    <!-- header -->
+    <header>
+      <nav class="uk-navbar-container uk-navbar uk-navbar-transparent">
+        <h1 class="left"><img src="img/logo1.png" alt="0" class="logo"></h1>
+        <ul class="center ">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">Log In</a></li>
+          <li>
+            <button class="uk-button uk-button-default" type="button">Genre</button>
+             <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
+                <ul class="uk-nav uk-dropdown-nav" id="generos-menu">
+
+                </ul>
+             </div>
+           </li>
+        </ul>
+        <ul class="right">
+            <li>
+              <a href="" uk-icon="search"></a>
+               <div uk-dropdown>
+                <ul class="uk-nav uk-dropdown-nav">
+                  <div class="search">
+                    <form class="uk-search-large" action="resultados.html" method="get">
+                      <input type="text" name="searchbox" value="" placeholder="Search..">
+                    </form>
+                  </div>
+                </ul>
+              </div>
+            </li>
+            <li><a href="buscador-avanzado.html">Buscador Avanzado</a></li>
+         </ul>
+      </nav>
+    </header>
 
 
     <form class="buscador-avanzado" action="respuesta-buscador-avanzado.html" method="get">
@@ -24,5 +67,15 @@
       <button type="submit" name="submit-ba"></button>
     </form>
 
+    <footer  class="Piedepagina">
+      <ul class="grupo">
+        <li>Maitena Galinde</li>
+        <li>Delfina Giesenow</li>
+
+      </ul>
+      <div class="logoTmdb">
+          <img src="img/themovielogo.png"  href="#top" uk-scroll alt="">
+      </div>
+    </footer>
   </body>
 </html>
