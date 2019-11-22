@@ -15,60 +15,24 @@
 
   </head>
   <body>
-    <!-- header -->   <!-- header -->
-       <header>
-         <nav class="uk-navbar-container uk-navbar uk-navbar-transparent">
-           <h1 class="left"><img src="img/logo1.png" alt="0" class="logo"></h1>
-           <ul class="center ">
-             <li><a href="index.html">Home</a></li>
-             <li><a href="login.html">Log In</a></li>
-             <li>
-               <button class="uk-button uk-button-default" type="button">Genre</button>
-                <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
-                   <ul class="uk-nav uk-dropdown-nav" id="generos-menu">
-
-                   </ul>
-                </div>
-              </li>
-           </ul>
-           <ul class="right">
-               <li>
-                 <a href="" uk-icon="search"></a>
-                  <div uk-dropdown>
-                   <ul class="uk-nav uk-dropdown-nav">
-                     <div class="search">
-                       <form class="uk-search-large" action="resultados.html" method="get">
-                         <input type="text" name="searchbox" value="" placeholder="Search..">
-                       </form>
-                     </div>
-                   </ul>
-                 </div>
-               </li>
-               <li><a href="buscador-avanzado.html">Buscador Avanzado</a></li>
-            </ul>
-         </nav>
-       </header>
-    <!-- <header>
+    <!-- header -->
+    <header>
       <nav class="uk-navbar-container uk-navbar uk-navbar-transparent">
         <h1 class="left"><img src="img/logo1.png" alt="0" class="logo"></h1>
+
         <ul class="center ">
           <li><a href="index.html">Home</a></li>
-          <li><a>Log In</a></li>
+          <li><a href="login.html">Log In</a></li>
           <li>
-            <button class="uk-button uk-button-default" type="button">Genre</button>
+            <button class="uk-button uk-button-default genrebtn" type="button">Genre</button>
              <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
                 <ul class="uk-nav uk-dropdown-nav" id="generos-menu">
-                  <li>
-                    <div  class="genero">
-                      <ul class="genero">
-                        <li class="idGenero"></li>
-                      </ul>
-                    </li>
-                  </div>
+
                 </ul>
              </div>
            </li>
         </ul>
+
         <ul class="right">
             <li>
               <a href="" uk-icon="search"></a>
@@ -76,27 +40,36 @@
                 <ul class="uk-nav uk-dropdown-nav">
                   <div class="search">
                     <form class="uk-search-large" action="resultados.html" method="get">
-                      <input type="text" name="searchbox" value="" placeholder="Search..">
+                      <input type="text" name="searchbox" value="" class="searchbox" placeholder="Search..">
                     </form>
                   </div>
                 </ul>
               </div>
             </li>
-            <li><span uk-icon="more"></span></li>
-            <!-- <li><button type="button"><img src="img/download.png" alt="0" class="lupa"></li></button> -->
-            <span class="uk-margin-small-right" ></span>
-          </ul>
+            <li><a href="buscador-avanzado.html">Buscador Avanzado</a></li>
+         </ul>
+
       </nav>
-    </header> -->
+    </header>
 
      <ul id="listado-generos">
          <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-             <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-5@m uk-grid">
+             <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-5@m uk-grid flex-generos">
              </ul>
               <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
               <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
          </div>
      </ul>
+
+     <footer  class="Piedepagina">
+       <ul class="grupo">
+         <li>Maitena Galinde</li>
+         <li>Delfina Giesenow</li>
+       </ul>
+       <div class="logoTmdb">
+           <img class="imagen-tmbd" src="img/themovielogo.png"  href="#top" uk-scroll alt="">
+       </div>
+     </footer>
 
   </body>
 </html>

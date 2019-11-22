@@ -23,7 +23,7 @@ fetch(url)
       //   if (informacion[i].poster_path )
 
       var buscadorGeneral = document.querySelector (".resultados-buscador-avanzado")
-      var elementsHtml ='<div class=" uk-card uk-card-default uk-card-body uk-width-1-5">'
+      var elementsHtml ='<div class="uk-card uk-card-default uk-card-body uk-width-1-5">'
        elementsHtml +='<img src="https://image.tmdb.org/t/p/original' + informacion.results[i].poster_path + '" elements>'
        elementsHtml +='</div> '
        buscadorGeneral.innerHTML += elementsHtml

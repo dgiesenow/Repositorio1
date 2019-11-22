@@ -19,7 +19,7 @@ fetch(url)
 
     var ul = document.querySelector(".todo")
     var elementsHtml = '<div class="todo">'
-    elementsHtml += '<div class="poster">'
+    elementsHtml += '<div class="poster uk-child-width-1-2 uk-child-width-1-5@m">'
     // elementsHtml += '<img src="https://image.tmdb.org/t/p/original' + informacion.poster_path
     elementsHtml += '<img src="https://image.tmdb.org/t/p/original' + informacion.poster_path + '" >'
     elementsHtml += '</div>'

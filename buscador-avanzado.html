@@ -21,11 +21,12 @@
     <header>
       <nav class="uk-navbar-container uk-navbar uk-navbar-transparent">
         <h1 class="left"><img src="img/logo1.png" alt="0" class="logo"></h1>
+
         <ul class="center ">
           <li><a href="index.html">Home</a></li>
           <li><a href="login.html">Log In</a></li>
           <li>
-            <button class="uk-button uk-button-default" type="button">Genre</button>
+            <button class="uk-button uk-button-default genrebtn" type="button">Genre</button>
              <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
                 <ul class="uk-nav uk-dropdown-nav" id="generos-menu">
 
@@ -33,6 +34,7 @@
              </div>
            </li>
         </ul>
+
         <ul class="right">
             <li>
               <a href="" uk-icon="search"></a>
@@ -40,7 +42,7 @@
                 <ul class="uk-nav uk-dropdown-nav">
                   <div class="search">
                     <form class="uk-search-large" action="resultados.html" method="get">
-                      <input type="text" name="searchbox" value="" placeholder="Search..">
+                      <input type="text" name="searchbox" value="" class="searchbox" placeholder="Search..">
                     </form>
                   </div>
                 </ul>
@@ -48,33 +50,34 @@
             </li>
             <li><a href="buscador-avanzado.html">Buscador Avanzado</a></li>
          </ul>
+
       </nav>
     </header>
 
+    <div class="BA">
+      <form class="buscador-avanzado" action="respuesta-buscador-avanzado.html" method="get">
+        <label class="label-BA" for="select-genre"> What would you like to watch? </label>
+        <select class="select-genre" name="Wanted">
+        </select>
+        <label class="label-BA" for="genre"> Want don't you want to watch?</label>
+        <select name="Unwanted" class="no">
+        </select>
+        <label class="label-BA" for="año">Release Year</label>
+         <select class="año" name="year">
 
-    <form class="buscador-avanzado" action="respuesta-buscador-avanzado.html" method="get">
-      <label for="select-genre"> What would you like to watch? </label>
-      <select class="select-genre" name="Wanted">
-      </select>
-      <label for="genre"> Want don't you want to watch?</label>
-      <select name="Unwanted" class="no">
-      </select>
-      <label for="año">Release Year</label>
-       <select class="año" name="year">
+         </select>
 
-       </select>
-
-      <button type="submit" name="submit-ba"></button>
-    </form>
+        <button type="submit" name="submit-ba" class="submit-btn-BA"></button>
+      </form>
+  </div>
 
     <footer  class="Piedepagina">
       <ul class="grupo">
         <li>Maitena Galinde</li>
         <li>Delfina Giesenow</li>
-
       </ul>
       <div class="logoTmdb">
-          <img src="img/themovielogo.png"  href="#top" uk-scroll alt="">
+          <img class="imagen-tmbd" src="img/themovielogo.png"  href="#top" uk-scroll alt="">
       </div>
     </footer>
   </body>
